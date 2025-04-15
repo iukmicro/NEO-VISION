@@ -87,7 +87,7 @@ export default function Hero() {
       <canvas ref={canvasRef} className="absolute inset-0 z-0" />
       <div className="absolute inset-0 z-0 opacity-30">
         <img
-          src="/placeholder.svg?height=1200&width=2000&text=Eye+Care+Hero+Image"
+          src="eye_scanning.jpg/?height=1200&width=2000&text=Eye+Care+Hero+Image"
           alt="Eye care hero background"
           className="w-full h-full object-cover"
         />
@@ -99,13 +99,13 @@ export default function Hero() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
               Clear Vision, <span className="text-blue-400">Brighter</span> Future
             </h1>
-            <div className="relative mx-auto w-64 h-64 mb-8">
+            {/* <div className="relative mx-auto w-64 h-64 mb-8">
               <img
-                src="/placeholder.svg?height=400&width=400&text=3D+Eye+Model"
+                src="/spects.jpg?height=400&width=400&text=3D+Eye+Model"
                 alt="3D eye model"
                 className="w-full h-full object-contain"
               />
-            </div>
+            </div> */}
             <p className="text-lg md:text-xl text-gray-600 mb-8">
               Experience the future of eye care with cutting-edge technology and compassionate service at NEO VISION EYE
               CENTER.

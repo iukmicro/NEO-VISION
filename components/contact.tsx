@@ -40,7 +40,7 @@ export default function Contact() {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      details: "(555) 123-4567",
+      details: "+91 97402 27263",
     },
     {
       icon: <Mail className="h-6 w-6" />,
@@ -50,7 +50,7 @@ export default function Contact() {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Location",
-      details: "123 Vision Street, Eye Care City, EC 12345",
+      details: "2nd Floor, ParvathiNagar Main Rd, above Tanmay Super Market, near S P Bungalow, KHB Colony, Parvathi Nagar, Ballari, Karnataka 583103",
     },
     {
       icon: <Clock className="h-6 w-6" />,
@@ -102,13 +102,18 @@ export default function Contact() {
               ))}
             </div>
 
-            <div className="rounded-lg overflow-hidden h-[300px] shadow-lg">
-              <img
-                src="/placeholder.svg?height=300&width=600&text=Google+Map+Location"
-                alt="NEO VISION EYE CENTER location map"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <div className="rounded-lg overflow-hidden shadow-lg">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.2115705227666!2d76.9226601!3d15.1514971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb711d1fc510b27%3A0x6ebc82c93b1a77a1!2sNeo%20Vision%20Lasik%20Centre!5e1!3m2!1sen!2sin!4v1741513878204!5m2!1sen!2sin"
+    width="100%"
+    height="350"
+    style={{ border: 0, display: "block", margin: "auto", maxWidth: "100%", minHeight: "300px" }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
           </motion.div>
 
           <motion.div

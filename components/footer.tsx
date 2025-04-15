@@ -86,18 +86,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-bold text-lg mb-4">Legal</h3>
-            <ul className="space-y-2">
-              {links.legal.map((link, index) => (
-                <li key={index}>
-                  <Link href={link.href} className="text-gray-400 hover:text-blue-300 transition-colors">
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">

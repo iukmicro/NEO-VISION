@@ -16,8 +16,8 @@ export default function AboutUs() {
   const achievements = [
     {
       icon: <CheckCircle className="h-10 w-10 text-orange-500" />,
-      title: "10+ Years of Excellence",
-      description: "Providing exceptional eye care services for over a decade.",
+      title: "10+ Years of Experience Doctors",
+      description: "Providing exceptional eye care services.",
     },
     {
       icon: <Award className="h-10 w-10 text-orange-500" />,
@@ -65,7 +65,7 @@ export default function AboutUs() {
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-orange-200 rounded-full opacity-50"></div>
               <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="/placeholder.svg?height=600&width=800&text=Modern+Eye+Clinic"
+                  src="/spects.jpg?height=600&=800&text=Modern+Eye+Clinic"
                   alt="Modern eye clinic interior"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -82,7 +82,7 @@ export default function AboutUs() {
             >
               <h3 className="text-2xl font-bold text-gray-800 mb-6">Our Journey</h3>
               <p className="text-gray-600 mb-6">
-                Founded in 2010, NEO VISION EYE CENTER has grown from a small clinic to a state-of-the-art facility
+                Founded in 2025, NEO VISION EYE CENTER has grown from a small clinic to a state-of-the-art facility
                 equipped with the latest technology and staffed by leading specialists in the field.
               </p>
               <p className="text-gray-600 mb-8">

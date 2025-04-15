@@ -13,22 +13,22 @@ export default function EquipmentGallery() {
       name: "Advanced Eye Scanner",
       description:
         "Our state-of-the-art eye scanning technology provides detailed imaging of your retina and optic nerve.",
-      image: "/placeholder.svg?height=600&width=800&text=Eye+Scanner+Equipment",
+      image: "/page1.jfif?height=600&width=800&text=Eye+Scanner+Equipment",
     },
     {
       name: "LASIK Technology",
       description: "The latest LASIK equipment for precise and safe vision correction procedures.",
-      image: "/placeholder.svg?height=600&width=800&text=LASIK+Equipment",
+      image: "/page2.jfif?height=600&width=800&text=LASIK+Equipment",
     },
     {
       name: "Diagnostic Suite",
       description: "Comprehensive diagnostic tools to accurately assess your vision and eye health.",
-      image: "/placeholder.svg?height=600&width=800&text=Diagnostic+Equipment",
+      image: "/page3.jfif?height=600&width=800&text=Diagnostic+Equipment",
     },
     {
       name: "Pediatric Eye Testing",
       description: "Kid-friendly equipment designed to make eye exams fun and comfortable for our youngest patients.",
-      image: "/placeholder.svg?height=600&width=800&text=Pediatric+Equipment",
+      image: "/page4.jfif?height=600&width=800&text=Pediatric+Equipment",
     },
   ]
 

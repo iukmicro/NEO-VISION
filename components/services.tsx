@@ -72,11 +72,11 @@ export default function Services() {
               <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-lg border-2 border-transparent hover:border-blue-200">
                 <CardContent className="p-6">
                   <div className="mb-6 rounded-lg overflow-hidden">
-                    <img
+                    {/* <img
                       src={`/placeholder.svg?height=200&width=300&text=${encodeURIComponent(service.title)}`}
                       alt={`${service.title} service`}
                       className="w-full h-40 object-cover"
-                    />
+                    /> */}
                   </div>
                   <div className="relative mb-6 mx-auto w-20 h-20 flex items-center justify-center">
                     <div

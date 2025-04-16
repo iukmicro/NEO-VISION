@@ -25,9 +25,15 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission logic here
-    console.log(formData)
-    alert("Thank you for your message. We'll get back to you soon!")
+  
+    const { name, email, phone, message } = formData
+  
+    const whatsappNumber = "919740227263" 
+    const text = `Hello, my name is ${name}.%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`
+  
+    window.open(whatsappURL, "_blank")
+  
     setFormData({
       name: "",
       email: "",
@@ -35,6 +41,7 @@ export default function Contact() {
       message: "",
     })
   }
+  
 
   const contactInfo = [
     {

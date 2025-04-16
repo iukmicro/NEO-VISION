@@ -21,10 +21,10 @@ export default function Header() {
 
   return (
     <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-transparent",
-      )}
+    className={cn(
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+      isScrolled ? "bg-[#10275d]" : "bg-[#10275d]",
+    )}
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
@@ -38,25 +38,19 @@ export default function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#about" className="text-gray-700 hover:text-blue-400 transition-colors">
-              About
-            </Link>
-            <Link href="#services" className="text-gray-700 hover:text-blue-400 transition-colors">
-              Services
-            </Link>
-            <Link href="#appointment" className="text-gray-700 hover:text-blue-400 transition-colors">
-              Appointment
-            </Link>
-            <Link href="#testimonials" className="text-gray-700 hover:text-blue-400 transition-colors">
-              Testimonials
-            </Link>
-            <Link href="#contact" className="text-gray-700 hover:text-blue-400 transition-colors">
-              Contact
-            </Link>
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white">Book Appointment</Button>
-          </nav>
+  <Link href="#about" className="text-white hover:text-orange-400 transition-colors">About</Link>
+  <Link href="#services" className="text-white hover:text-orange-400 transition-colors">Services</Link>
+  <Link href="#appointment" className="text-white hover:text-orange-400 transition-colors">Appointment</Link>
+  <Link href="#testimonials" className="text-white hover:text-orange-400 transition-colors">Testimonials</Link>
+  <Link href="#contact" className="text-white hover:text-orange-400 transition-colors">Contact</Link>
+  <Link href="#contact">
+  <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+    Book Appointment
+  </Button>
+</Link>
+</nav>
 
-          <button className="md:hidden text-gray-700" onClick={() => setIsOpen(!isOpen)}>
+          <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
@@ -102,7 +96,11 @@ export default function Header() {
               >
                 Contact
               </Link>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white w-full">Book Appointment</Button>
+              <Link href="#contact">
+  <Button className="bg-orange-500 hover:bg-orange-600 text-white w-full">
+    Book Appointment
+  </Button>
+</Link>
             </nav>
           </div>
         </div>

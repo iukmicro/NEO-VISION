@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Menu, X, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { Phone } from "lucide-react"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -30,10 +31,10 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
           <img
-    src="/logo2.jpg" // ← replace with your actual logo path
-    alt="NEO VISION Logo"
-    className="h-10 w-auto"
-  />
+           src="/logo2.jpg" // ← replace with your actual logo path
+           alt="NEO VISION Logo"
+           className="h-10 w-auto"
+           />
             {/* <span className="font-bold text-xl text-gray-800">NEO VISION</span> */}
           </Link>
 
@@ -43,11 +44,12 @@ export default function Header() {
   <Link href="#appointment" className="text-white hover:text-orange-400 transition-colors">Appointment</Link>
   <Link href="#testimonials" className="text-white hover:text-orange-400 transition-colors">Testimonials</Link>
   <Link href="#contact" className="text-white hover:text-orange-400 transition-colors">Contact</Link>
-  <Link href="#contact">
-  <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-    Book Appointment
+  <a href="tel:+918431145179">
+  <Button className="bg-orange-500 hover:bg-orange-600 text-white flex items-center space-x-2">
+    <Phone className="w-4 h-4 text-white" />
+    <span>+91 97402 27263</span>
   </Button>
-</Link>
+</a>
 </nav>
 
           <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
@@ -96,11 +98,12 @@ export default function Header() {
               >
                 Contact
               </Link>
-              <Link href="#contact">
-  <Button className="bg-orange-500 hover:bg-orange-600 text-white w-full">
-    Book Appointment
+              <a href="tel:+918431145179">
+  <Button className="bg-orange-500 hover:bg-orange-600 text-white w-full flex items-center justify-center space-x-2">
+    <Phone className="w-4 h-4 text-white" />
+    <span>+91 97402 27263</span>
   </Button>
-</Link>
+</a>
             </nav>
           </div>
         </div>

@@ -40,8 +40,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-6">
-              <Eye className="h-8 w-8 text-blue-300" />
-              <span className="font-bold text-xl">NEO VISION</span>
+            
+          <img
+           src="/logo2.jpg" // ← replace with your actual logo path
+           alt="NEO VISION Logo"
+           className="h-10 w-auto"
+           />
+            {/* <span className="font-bold text-xl text-gray-800">NEO VISION</span> */}
+         
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
               NEO VISION EYE CENTER is committed to providing exceptional eye care services using cutting-edge
@@ -91,12 +97,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">&copy; {currentYear} NEO VISION EYE CENTER. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
-            <Link
-              href="#"
-              className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-colors"
-            >
-              Book Appointment
-            </Link>
+       
           </div>
         </div>
       </div>

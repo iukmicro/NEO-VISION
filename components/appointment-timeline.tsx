@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { Calendar, FileText, CheckCircle, Bell } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function AppointmentTimeline() {
   const [activeStep, setActiveStep] = useState(0)
@@ -112,9 +113,11 @@ export default function AppointmentTimeline() {
             viewport={{ once: true }}
             className="mt-16 text-center"
           >
+            <Link href="#contact">
             <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg">
               Schedule Your Appointment
             </Button>
+            </Link>
           </motion.div>
         </div>
       </div>

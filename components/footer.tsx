@@ -6,24 +6,17 @@ export default function Footer() {
 
   const links = {
     services: [
-      { name: "Eye Scanning", href: "#" },
-      { name: "LASIK Surgery", href: "#" },
-      { name: "PRK", href: "#" },
-      { name: "Pediatric Eye Care", href: "#" },
-      { name: "Prescription Eyewear", href: "#" },
+      { name: "Eye Scanning", href: "#services" },
+      { name: "LASIK Surgery", href: "#services" },
+      { name: "PRK", href: "#services" },
+      { name: "Pediatric Eye Care", href: "#services" },
+      { name: "Prescription Eyewear", href: "#services" },
     ],
     company: [
-      { name: "About Us", href: "#" },
-      { name: "Our Team", href: "#" },
-      { name: "Careers", href: "#" },
-      { name: "News & Blog", href: "#" },
-      { name: "Contact", href: "#" },
-    ],
-    legal: [
-      { name: "Privacy Policy", href: "#" },
-      { name: "Terms of Service", href: "#" },
-      { name: "Accessibility", href: "#" },
-      { name: "Cookie Policy", href: "#" },
+      { name: "About Us", href: "#about" },
+      { name: "Our Team", href: "#teams" },
+      { name: "Appointment", href: "#appointment" },
+      { name: "Contact", href: "#contact" },
     ],
   }
 
@@ -40,14 +33,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-6">
-            
-          <img
-           src="/logo2.jpg" // ← replace with your actual logo path
-           alt="NEO VISION Logo"
-           className="h-10 w-auto"
-           />
-            {/* <span className="font-bold text-xl text-gray-800">NEO VISION</span> */}
-         
+
+              <img
+                src="/newlogo[1].png" // ← replace with your actual logo path
+                alt="NEO VISION Logo"
+                className="h-10 w-auto"
+              />
+              {/* <span className="font-bold text-xl text-gray-800">NEO VISION</span> */}
+
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
               NEO VISION EYE CENTER is committed to providing exceptional eye care services using cutting-edge
@@ -95,10 +88,11 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">&copy; {currentYear} NEO VISION EYE CENTER. All rights reserved.</p>
-          <div className="mt-4 md:mt-0">
-       
+          <div className="flex flex-col md:flex-row md:space-x-4 items-center text-sm text-gray-400">
+            <p>&copy; {currentYear}All rights reserved to<span className="text-white font-normal"> NEO VISION EYE CENTER.</span> Designed by <span className="text-white font-medium">IUKMICRO</span></p>
+
           </div>
+
         </div>
       </div>
     </footer>

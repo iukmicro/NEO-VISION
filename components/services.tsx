@@ -13,31 +13,37 @@ export default function Services() {
       icon: <Search className="h-12 w-12" />,
       title: "Eye Scanning",
       description: "Comprehensive eye examinations using advanced diagnostic technology.",
+      image: "/service1.jpg",
     },
     {
       icon: <Zap className="h-12 w-12" />,
       title: "LASIK Surgery",
       description: "State-of-the-art laser vision correction for freedom from glasses.",
+      image: "/service2.jpg",
     },
     {
       icon: <Eye className="h-12 w-12" />,
       title: "PRK",
       description: "Photorefractive keratectomy for patients who may not be candidates for LASIK.",
+      image: "/service3.jpg",
     },
     {
       icon: <Baby className="h-12 w-12" />,
       title: "Pediatric Eye Care",
       description: "Specialized care for children's vision development and eye health.",
+      image: "/service4.jpg",
     },
     {
       icon: <Glasses className="h-12 w-12" />,
       title: "Prescription Eyewear",
       description: "Custom-fitted glasses and contact lenses with the latest lens technology.",
+      image: "/service5.jpg",
     },
     {
       icon: <Activity className="h-12 w-12" />,
       title: "Eye Disease Management",
       description: "Treatment and monitoring for conditions like glaucoma, cataracts, and macular degeneration.",
+      image: "/service6.jpg",
     },
   ]
 
@@ -72,11 +78,11 @@ export default function Services() {
               <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-lg border-2 border-transparent hover:border-blue-200">
                 <CardContent className="p-6">
                   <div className="mb-6 rounded-lg overflow-hidden">
-                    {/* <img
-                      src={`/placeholder.svg?height=200&width=300&text=${encodeURIComponent(service.title)}`}
+                    <img
+                      src={service.image}
                       alt={`${service.title} service`}
-                      className="w-full h-40 object-cover"
-                    /> */}
+                      className="w-full h-60 object-cover"
+                    />
                   </div>
                   <div className="relative mb-6 mx-auto w-20 h-20 flex items-center justify-center">
                     <div

@@ -2,39 +2,38 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
-import { Linkedin, Twitter, Mail } from "lucide-react"
 import Link from "next/link"
 
 export default function TeamSection() {
   const team = [
     {
-      name: "Dr. Sarah Williams",
+      name: "Dr. Anil Sharma",
       role: "Chief Ophthalmologist",
-      bio: "Dr. Williams has over 15 years of experience in ophthalmology with a specialization in LASIK and cataract surgery.",
+      bio: "Dr. Anil Sharma has over 15 years of experience in ophthalmology with a specialization in LASIK and cataract surgery.",
       image: "/placeholder.svg?height=400&width=400&text=Dr.+Williams",
     },
     {
-      name: "Dr. Michael Chen",
+      name: "Dr. Arvind Patel",
       role: "Pediatric Specialist",
-      bio: "Dr. Chen focuses on children's eye health and has pioneered several techniques for early vision problem detection.",
+      bio: "Dr. Arvind Patel focuses on children's eye health and has pioneered several techniques for early vision problem detection.",
       image: "/placeholder.svg?height=400&width=400&text=Dr.+Chen",
     },
     {
-      name: "Dr. Emily Rodriguez",
+      name: "Dr. Pradeep Srinivasan",
       role: "Retina Specialist",
-      bio: "Dr. Rodriguez is an expert in retinal diseases and treatments, with numerous published research papers.",
+      bio: "Dr. Pradeep Srinivasan is an expert in retinal diseases and treatments, with numerous published research papers.",
       image: "/placeholder.svg?height=400&width=400&text=Dr.+Rodriguez",
     },
     {
-      name: "Dr. James Wilson",
+      name: "Dr. Pooja Desai",
       role: "Optometrist",
-      bio: "Dr. Wilson specializes in comprehensive eye exams and fitting patients with the perfect corrective lenses.",
+      bio: "Dr. Pooja Desai specializes in comprehensive eye exams and fitting patients with the perfect corrective lenses.",
       image: "/placeholder.svg?height=400&width=400&text=Dr.+Wilson",
     },
   ]
 
   return (
-    <section className="py-20 bg-blue-50">
+    <section className="py-20 bg-blue-50" id="teams">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,28 +66,6 @@ export default function TeamSection() {
                     alt={member.name}
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <div className="p-4 w-full flex justify-center space-x-4">
-                      <Link
-                        href="#"
-                        className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-blue-500 transition-colors"
-                      >
-                        <Linkedin className="h-4 w-4" />
-                      </Link>
-                      <Link
-                        href="#"
-                        className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-blue-500 transition-colors"
-                      >
-                        <Twitter className="h-4 w-4" />
-                      </Link>
-                      <Link
-                        href="#"
-                        className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-blue-500 transition-colors"
-                      >
-                        <Mail className="h-4 w-4" />
-                      </Link>
-                    </div>
-                  </div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="font-bold text-xl text-gray-800 mb-1">{member.name}</h3>

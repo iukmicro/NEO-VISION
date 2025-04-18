@@ -66,9 +66,8 @@ export default function AppointmentTimeline() {
                     onMouseEnter={() => setActiveStep(index)}
                   >
                     <div
-                      className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all duration-300 ${
-                        activeStep >= index ? "bg-orange-500 text-white" : "bg-blue-100 text-blue-400"
-                      }`}
+                      className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all duration-300 ${activeStep >= index ? "bg-orange-500 text-white" : "bg-blue-100 text-blue-400"
+                        }`}
                     >
                       {step.icon}
                     </div>
@@ -92,9 +91,8 @@ export default function AppointmentTimeline() {
                 className="flex items-start gap-4"
               >
                 <div
-                  className={`shrink-0 w-12 h-12 rounded-full flex items-center justify-center ${
-                    index <= activeStep ? "bg-orange-500 text-white" : "bg-blue-100 text-blue-400"
-                  }`}
+                  className={`shrink-0 w-12 h-12 rounded-full flex items-center justify-center ${index <= activeStep ? "bg-orange-500 text-white" : "bg-blue-100 text-blue-400"
+                    }`}
                 >
                   {step.icon}
                 </div>
@@ -114,9 +112,9 @@ export default function AppointmentTimeline() {
             className="mt-16 text-center"
           >
             <Link href="#contact">
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg">
-              Schedule Your Appointment
-            </Button>
+              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg">
+                Schedule Your Appointment
+              </Button>
             </Link>
           </motion.div>
         </div>

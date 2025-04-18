@@ -12,21 +12,21 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Suresh Patil",
       role: "LASIK Patient",
       image: "/placeholder.svg?height=100&width=100&text=Sarah+J",
       quote:
         "The LASIK procedure at NEO VISION changed my life. I can now see clearly without glasses for the first time in 20 years. The staff was professional and caring throughout the entire process.",
     },
     {
-      name: "Michael Chen",
+      name: "Rajiv Mehra",
       role: "Regular Patient",
       image: "/placeholder.svg?height=100&width=100&text=Michael+C",
       quote:
         "I've been coming to NEO VISION for my annual eye exams for 5 years now. The technology they use is cutting-edge, and Dr. Williams always takes the time to explain everything thoroughly.",
     },
     {
-      name: "Emily Rodriguez",
+      name: "Neha Agarwal",
       role: "Pediatric Patient Parent",
       image: "/placeholder.svg?height=100&width=100&text=Emily+R",
       quote:

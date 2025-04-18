@@ -113,14 +113,14 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="#contact">
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg">
-                Book Appointment
-              </Button>
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg">
+                  Book Appointment
+                </Button>
               </Link>
               <Link href="#services">
-              <Button variant="outline" className="border-blue-300 text-blue-500 hover:bg-blue-50 px-8 py-6 text-lg">
-                Explore Services
-              </Button>
+                <Button variant="outline" className="border-blue-300 text-blue-500 hover:bg-blue-50 px-8 py-6 text-lg">
+                  Explore Services
+                </Button>
               </Link>
             </div>
           </motion.div>

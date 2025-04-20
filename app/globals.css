@@ -92,3 +92,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.filter-blue-icon {
+  filter: brightness(1.1) saturate(100%) invert(64%) sepia(17%) saturate(749%) hue-rotate(183deg) brightness(94%) contrast(88%);
+}
+
+.filter-orange-icon {
+  filter: brightness(1.5) saturate(100%) invert(57%) sepia(106%) saturate(780%) hue-rotate(355deg) brightness(104%) contrast(101%);
+}
+
+
+

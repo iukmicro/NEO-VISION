@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Eye, Zap, Baby, Search, Glasses, Activity } from "lucide-react"
+import { Eye, Zap, Baby, Search, Glasses } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function Services() {
@@ -40,7 +40,15 @@ export default function Services() {
       image: "/service5.jpg",
     },
     {
-      icon: <Activity className="h-12 w-12" />,
+      icon: (
+        <div
+          className={`h-12 w-12 transition-all duration-300 ${
+            hoveredIndex === 5 ? "filter-orange-icon scale-110" : "filter-blue-icon"
+          }`}
+        >
+          <img src="/swelling.png" alt="Eye Disease Icon" className="w-full h-full object-cover" />
+        </div>
+      ),
       title: "Eye Disease Management",
       description: "Treatment and monitoring for conditions like glaucoma, cataracts, and macular degeneration.",
       image: "/service6.jpg",
@@ -109,4 +117,3 @@ export default function Services() {
     </section>
   )
 }
-

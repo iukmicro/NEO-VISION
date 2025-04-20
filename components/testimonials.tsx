@@ -23,7 +23,7 @@ export default function Testimonials() {
       role: "Regular Patient",
       image: "/placeholder.svg?height=100&width=100&text=Michael+C",
       quote:
-        "I've been coming to NEO VISION for my annual eye exams for 5 years now. The technology they use is cutting-edge, and Dr. Williams always takes the time to explain everything thoroughly.",
+        "I've been coming to NEO VISION for my annual eye exams for 5 years now. The technology they use is cutting-edge, and Dr. Pradeep always takes the time to explain everything thoroughly.",
     },
     {
       name: "Neha Agarwal",

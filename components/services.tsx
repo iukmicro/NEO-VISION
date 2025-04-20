@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Eye, Zap, Baby, Search, Glasses } from "lucide-react"
+//import { Eye, Zap, Baby, Search, Glasses } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function Services() {
@@ -10,45 +10,45 @@ export default function Services() {
 
   const services = [
     {
-      icon: <Search className="h-12 w-12" />,
+      // icon: <Search className="h-12 w-12" />,
       title: "Eye Scanning",
       description: "Comprehensive eye examinations using advanced diagnostic technology.",
       image: "/service1.jpg",
     },
     {
-      icon: <Zap className="h-12 w-12" />,
+      // icon: <Zap className="h-12 w-12" />,
       title: "LASIK Surgery",
       description: "State-of-the-art laser vision correction for freedom from glasses.",
       image: "/service2.jpg",
     },
     {
-      icon: <Eye className="h-12 w-12" />,
+      // icon: <Eye className="h-12 w-12" />,
       title: "PRK",
       description: "Photorefractive keratectomy for patients who may not be candidates for LASIK.",
       image: "/service3.jpg",
     },
     {
-      icon: <Baby className="h-12 w-12" />,
+      // icon: <Baby className="h-12 w-12" />,
       title: "Pediatric Eye Care",
       description: "Specialized care for children's vision development and eye health.",
       image: "/service4.jpg",
     },
     {
-      icon: <Glasses className="h-12 w-12" />,
+      // icon: <Glasses className="h-12 w-12" />,
       title: "Prescription Eyewear",
       description: "Custom-fitted glasses and contact lenses with the latest lens technology.",
       image: "/service5.jpg",
     },
     {
-      icon: (
-        <div
-          className={`h-12 w-12 transition-all duration-300 ${
-            hoveredIndex === 5 ? "filter-orange-icon scale-110" : "filter-blue-icon"
-          }`}
-        >
-          <img src="/swelling.png" alt="Eye Disease Icon" className="w-full h-full object-cover" />
-        </div>
-      ),
+      // icon: (
+      //   <div
+      //     className={`h-12 w-12 transition-all duration-300 ${
+      //       hoveredIndex === 5 ? "filter-orange-icon scale-110" : "filter-blue-icon"
+      //     }`}
+      //   >
+      //     <img src="/swelling.png" alt="Eye Disease Icon" className="w-full h-full object-cover" />
+      //   </div>
+      // ),
       title: "Eye Disease Management",
       description: "Treatment and monitoring for conditions like glaucoma, cataracts, and macular degeneration.",
       image: "/service6.jpg",
@@ -92,7 +92,7 @@ export default function Services() {
                       className="w-full h-60 object-cover"
                     />
                   </div>
-                  <div className="relative mb-6 mx-auto w-20 h-20 flex items-center justify-center">
+                  {/* <div className="relative mb-6 mx-auto w-20 h-20 flex items-center justify-center">
                     <div
                       className={`absolute inset-0 rounded-full transition-all duration-300 ${
                         hoveredIndex === index ? "bg-orange-100 scale-110" : "bg-blue-50"
@@ -105,7 +105,7 @@ export default function Services() {
                     >
                       {service.icon}
                     </div>
-                  </div>
+                  </div> */}
                   <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">{service.title}</h3>
                   <p className="text-gray-600 text-center">{service.description}</p>
                 </CardContent>
